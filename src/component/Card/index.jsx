@@ -1,9 +1,12 @@
-import React from 'react';
+import React ,{useContext}from 'react';
 import Img from './logo192.png';
 import './style.css'
+import {MokaContext} from '../../Context/MokaContext';
 
-
-const Card = ({data}) => {
+const Card = () => {
+  const Data = useContext(MokaContext);
+  const {data ,handleClick}=Data
+  
     return (
         <section className="resulte">
         <div className="all">
@@ -37,7 +40,7 @@ const Card = ({data}) => {
                 <div className="info">
                   <span className="data">Data:{release_date}</span>
                   <span className="count">Vout Count :{vote_count}</span>
-                <button>Add To My favorit</button>
+                <button onClick={()=>handleClick(index)}>Add To My favorit</button>
                 </div>
               </article>
             );

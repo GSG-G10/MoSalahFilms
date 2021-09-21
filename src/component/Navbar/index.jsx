@@ -1,9 +1,12 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
 import './style.css'
+import React ,{useContext}from 'react';
+import { Link } from 'react-router-dom';
+import {MokaContext} from '../../Context/MokaContext';
 
 
-const Navbars = ({handleChange ,value}) => {
+const Navbars = () => {
+  const Data = useContext(MokaContext);
+  const {value,handleChange}=Data
     return (
         <nav className="nav">
             <h3 className="logo"> MO<span>K</span>A</h3>
