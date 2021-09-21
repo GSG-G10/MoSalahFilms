@@ -1,10 +1,11 @@
 import {useState,useEffect } from 'react';
 import Card from '../Card'
 import Navbars from '../Navbar'
+import './style.css'
 
 const Home = () => {
     const [data, setData] = useState([]);
-const [value, setValue] = useState('');
+const [value, setValue] = useState('fast');
 console.log(value);
 console.log("lst",data);
 
@@ -20,7 +21,7 @@ console.log("lst",data);
             .then((res) => res.json())
             .then((data) => {
               if(mounted) {
-                setData([data.results])
+                setData(data.results)
               } }).catch(err=>console.log(err))
 
 
