@@ -33,7 +33,7 @@ const MoviesProvider = ({children}) => {
         }, [value])
 
         useEffect(() => {
-        const newData= JSON.parse(localStorage.getItem("myItem"))
+          const newData= JSON.parse(localStorage.getItem("myItem"))
         if(newData){
           setIndex(newData)
           console.log("11111111",fav);
