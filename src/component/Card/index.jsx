@@ -40,7 +40,7 @@ const Card = () => {
                 <div className="info">
                   <span className="data">Data:{release_date}</span>
                   <span className="count">Vout Count :{vote_count}</span>
-                <button onClick={()=>handleClick(index)}>Add To My favorit</button>
+                <button className="btb-add" onClick={()=>handleClick(index)}>Add Favorit</button>
                 </div>
               </article>
             );

@@ -7,9 +7,7 @@ import {MokaContext} from '../../Context/MokaContext';
 
 const Favorit = () => {
     const Data = useContext(MokaContext);
-    console.log("Data in f" ,Data);
   const {fav}=Data
-  console.log("in faaaaaa",fav);
     return (
         <div>
             <Navbars/>
