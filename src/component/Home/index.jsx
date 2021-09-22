@@ -6,7 +6,6 @@ import './style.css'
 
 const Home = () => {
   const Data = useContext(MokaContext);
-  console.log( "home",Data);
   const {data }=Data
     return (
         <div>

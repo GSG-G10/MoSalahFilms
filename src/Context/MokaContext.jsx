@@ -2,17 +2,11 @@ import React  ,{useState ,createContext, useEffect}  from 'react';
 
 export const MokaContext = createContext();
 
-
 const MoviesProvider = ({children}) => {
   const [data, setData] = useState([]);
   const [fav, setIndex] = useState([]);
   const [value, setValue] = useState('fast');
- 
-  console.log("nnnnnnnnnnnn",JSON.parse(localStorage.getItem("myItem")));
-  console.log("favvvvvv",fav);
-  console.log("lst",data);
       useEffect(() => {
-        console.log("into to ues");
           let mounted = true;
           if(value !== ''){
   
@@ -36,7 +30,6 @@ const MoviesProvider = ({children}) => {
           const newData= JSON.parse(localStorage.getItem("myItem"))
         if(newData){
           setIndex(newData)
-          console.log("11111111",fav);
         }
       },[]);
 

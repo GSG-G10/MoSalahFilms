@@ -5,11 +5,11 @@
     width: 30%;
     height: fit-content;
     margin: 17px;
-    background-color: #5662705e !important;
+    background-color:#EBE1B1;
     border-radius: 40px;
+    border: 1px solid;
     box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
-      cursor: pointer;
-      transition: 0.4s;
+    transition: 0.4s;
   
   }
   .all {
@@ -29,7 +29,8 @@
   .img {
     height: 30% !important ;
     border: 1px solid;
-    /* object-fit: contain; */
+    border-radius: 40px;
+
   }
   .info {
     display: flex;
@@ -42,4 +43,14 @@
   .count {
     font-size: 15px;
     margin: 10px;
+  }
+  .btb-add{
+    font-size: 12px;
+    font-weight: 700;
+    background-color:#d68839;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+
+
   }
